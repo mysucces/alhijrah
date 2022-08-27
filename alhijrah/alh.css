@@ -279,7 +279,7 @@ figure::before {
 }
 .bismi{
     height: 60%;
-    background-image: url(./images/clipart.jpg);
+    background-image: url(clipart.jpg);
     width: 100%;
     background-size: cover;
     display: flex;
