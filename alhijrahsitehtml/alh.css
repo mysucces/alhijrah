@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.well{
+    height: 100vh;
+    width: 100%;
+}
+.theheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(228, 199, 127);
+    position:fixed;
+    top: 0;
+    opacity: 0.9;
+    overflow: hidden;
+}
+.phoneandmail{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size:1rem;
+    height: 100%;
+    color: rgb(27, 95, 27);
+    font-family:'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    
+}
+.none{
+    width: 30% ;
+}
+
+.likeandshare{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.phone{
+    display: flex;
+    width: 34%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-weight:bolder;
+    flex-wrap: wrap;
+}
+.mail{
+    display: flex;
+    width: 43%;
+    justify-content: space-between;
+    font-weight:bolder;
+    flex-wrap: wrap;
+}
+.like{
+    background-color: blue;
+    color: white;
+    font-size: large;
+    border: 5px solid blue;
+    width: 5rem;
+    border-radius: 7px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.share{
+    background-color: blue;
+    color: white;
+    font-size: large;
+    border: 5px solid blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 5rem;
+    border-radius: 7px;
+}
+.apply{
+    border: none;
+    height: 100%;
+    color:red ;
+    background-color: rgb(228, 199, 127);
+    font-size: 1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+}
+.mylogo{
+    height: 5rem;
+    width: 5rem;
+}
+.logo{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: rgb(27, 95, 27);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menubar{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    width: 67%;
+    justify-content: space-around;
+    list-style-type: none;
+    color: rgb(27, 95, 27);
+    flex-wrap: wrap;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.menu1{
+    color:red ;
+}
+.menu1 a{
+    color:red ;
+}
+a{
+    text-decoration: none;
+    color: rgb(27, 95, 27);
+}
+/*.theslider{
+    width: 100%;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+}
+figure .slide{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+figure .imageslide{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    object-fit: cover;
+    }
+figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 30s infinite;
+    z-index: -1;
+    height: 100%;
+}
+figcaption{
+    margin: 0;
+    font-weight: bold;
+    font-size: 3rem;
+    position: absolute;
+    flex-direction: column;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+figure::before {
+    background-image: linear-gradient(rgba(18, 17, 17, 0.5),rgba(28, 26, 26, 0.5), transparent);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+.onscreentext1{
+   font-family: "Piedra", sans-serif;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 6px;
+    font-size: 2.5rem;
+    /*margin-bottom: 8rem;*/
+    /*text-align: center;
+}
+
+.slidebutton{
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    background-color:transparent;
+    color: white;
+    border: 3px solid white;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*margin-top: 2rem;*/
+
+/*}
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    }
+@keyframes animate
+ {
+    0%{left: 0%;}
+    10%{left: 0%;}
+    12%{left: -100%;}
+    22%{left: -100%;}
+    24%{left: -200%;}
+    34%{left: -200%;}
+    36%{left: -100%;}
+    46%{left: -100%;}
+    48%{left: -200%;}
+    58%{left: -200%;}
+    60%{left:0%;}
+
+}*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: rgb(228, 199, 127);
+    width: 14rem;
+    z-index: 9999;
+}
+.dropdowncontent a{
+    color: rgb(27, 95, 27);
+    display: block;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+.dropdowncontent a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+.nigeria{
+ margin-top: 7rem;
+ 
+}
+.flag{
+    height:5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.picsandtext{
+    height: 130rem;
+    width: 100%;
+    background-color: rgb(241, 239, 239);
+}
+.bism{
+    height: 100%;
+    width:31.666666666666%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid rgb(241, 239, 239);
+}
+.bismi{
+    height: 60%;
+    background-image: url(./images/clipart.jpg);
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bismicontent{
+    height: 40%;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bismicontent h3{
+    text-align:center;
+}
+/*.welcome{
+    height: 100%;
+    width:31.666666666666%;
+    display: flex;
+    
+}
+.another{
+    height: 100%;
+    width:31.666666666666%;
+}*/
+.bismdiv{
+    display: flex;
+    margin: 0;
+    height: 35rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.next{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.nextimage{
+    width: 50%;
+}
+.tinyspace{
+    height: 4rem;
+}
+.nextcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+.nexttext{
+    text-align: justify;
+    line-height: 1.5;
+}
+.entrance{
+    border-bottom: 2px solid rgb(5, 94, 5);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+}
+.entrancetext{
+    margin-left: 4rem;
+}
+.nextextet{
+    width: 80%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+.downtext{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.pools{
+    width: 90%;
+}
+.footer{
+    height: 25rem;
+    width: 100%;
+    bottom: 0;
+    background-color:#292929;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;     
+}
+.footertext{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    height: 55%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.31);
+    line-height: 26px;
+    word-spacing: 2px;
+}
+.reserved{
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+}
+.ftdescription{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ftaddress{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ftsocialmedia{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.thephone{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.dicon{
+    
+    border-radius: 50%;
+    background-color: #474646;;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.anotherphone{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+video{
+    max-width: 100%;
+    object-fit: cover;
+}
+.thatvideo::before {
+    background-image: linear-gradient(rgba(252, 246, 246, 0),rgba(248, 242, 242, 0), transparent);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.thatvideo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+  }
+.videotext{
+    margin: 0;
+    position: absolute;
+    flex-direction: column;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+}
+.videotext h2{
+    font-size: 1.3rem;
+    letter-spacing: 1.8px;
+    font-family: "Montserrat";
+}
